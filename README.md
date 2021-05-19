@@ -14,7 +14,12 @@ Example |
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Features
-- Customizable: You can easily inherit and create beautiful loading buttons for your great application.
+- Edit button style from storyboard or code
+- Set a gradient background and gradient directions
+- Customize the corner radius, border color, border width
+- Customize the button animation: scale, scale duration
+- Edit the button shadows: color, opacity, offset, radius
+- Show, hide activity indicator inside the button
 
 ## Requirements
 - Swift 5.0
@@ -109,10 +114,15 @@ it, simply add the following line to your Podfile:
 pod 'QBIndicatorButton'
 ```
 
-## Author
+## Contributing
 
-sjc-bui, bui@setjapan.co.jp
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **need help**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
-## License
+## MIT License
 
 QBIndicatorButton is available under the MIT license. See the LICENSE file for more info.
+
+Made with :heart: by [sjc-bui](https://github.com/sjc-bui).
