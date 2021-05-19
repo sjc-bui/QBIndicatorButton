@@ -21,7 +21,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - iOS 12.0+
 
 ## Getting started
-Declaration.
+
+### Storyboard Setup
+Add UIButton to Storyboard and set custom class, module.
+
+![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png)
+
+### Code Setup
 ```swift
 var loadingButton: QBIndicatorButton!
 loadingButton = QBIndicatorButton(text: "Tap me",
@@ -33,6 +39,8 @@ loadingButton = QBIndicatorButton(text: "Tap me",
 
 Show loading indicator.
 ```swift
+loadingButton.start()
+// or
 loadingButton.start {
     // do something when start
     print("starting...")
@@ -41,6 +49,8 @@ loadingButton.start {
 
 Hide loading indicator.
 ```swift
+loadingButton.stop()
+// or
 loadingButton.stop {
     // do something when stop
     print("stopping...")
