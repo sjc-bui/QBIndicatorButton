@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'QBIndicatorButton_Example' do
+  pod 'QBIndicatorButton', :path => '../'
+
+  target 'QBIndicatorButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
