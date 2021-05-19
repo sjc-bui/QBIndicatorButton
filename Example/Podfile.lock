@@ -1,0 +1,16 @@
+PODS:
+  - QBIndicatorButton (0.1.1)
+
+DEPENDENCIES:
+  - QBIndicatorButton (from `../`)
+
+EXTERNAL SOURCES:
+  QBIndicatorButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QBIndicatorButton: 5bdf3aff32fd3ea725c92f596b2ad397283a5d83
+
+PODFILE CHECKSUM: 973408f1f99949de196e057b2a7c88e3c0cb550f
+
+COCOAPODS: 1.10.1

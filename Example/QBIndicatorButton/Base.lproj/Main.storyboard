@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +19,231 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgQ-MM-brJ" userLabel="button1" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
+                                <rect key="frame" x="98.5" y="125" width="178" height="51"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScale">
+                                        <real key="value" value="0.95099999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleDuration">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemPinkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemIndigoColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientDirection">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activityIndicatorPosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xo-7m-iql" userLabel="button2" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
+                                <rect key="frame" x="98.5" y="214" width="178" height="51"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScale">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleDuration">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientDirection">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activityIndicatorPosition">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNG-eR-fHQ" userLabel="button3" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
+                                <rect key="frame" x="98.5" y="308" width="178" height="51"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Et0-Lc-cYS"/>
+                                    <constraint firstAttribute="width" constant="178" id="Kop-c0-rXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Tap me again">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScale">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleDuration">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activityIndicatorPosition">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ9-g2-4su" userLabel="button4" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
+                                <rect key="frame" x="98.5" y="399" width="178" height="51"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScale">
+                                        <real key="value" value="0.69999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animatedScaleDuration">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientDirection">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activityIndicatorPosition">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-D9-niC" userLabel="button5" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
+                                <rect key="frame" x="98.5" y="490" width="178" height="51"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Tap me again!">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="leading" secondItem="qNG-eR-fHQ" secondAttribute="leading" id="3s1-gl-pO5"/>
+                            <constraint firstItem="qNG-eR-fHQ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3xW-kY-eRS"/>
+                            <constraint firstItem="QgQ-MM-brJ" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="5TH-wN-r3R"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="QgQ-MM-brJ" secondAttribute="centerX" id="6AG-en-LAw"/>
+                            <constraint firstItem="6Xo-7m-iql" firstAttribute="top" secondItem="QgQ-MM-brJ" secondAttribute="bottom" constant="38" id="8u4-kU-Qy7"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="9fn-VP-yuC"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="wPY-D9-niC" secondAttribute="centerX" id="Ekl-UM-XTc"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="top" secondItem="qNG-eR-fHQ" secondAttribute="bottom" constant="40" id="GAG-WW-LuR"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="GUf-B9-Wpj"/>
+                            <constraint firstItem="qNG-eR-fHQ" firstAttribute="top" secondItem="6Xo-7m-iql" secondAttribute="bottom" constant="43" id="PuZ-7m-mLi"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="d1T-Dc-PRd"/>
+                            <constraint firstItem="QgQ-MM-brJ" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="eYH-iP-pFK"/>
+                            <constraint firstItem="qNG-eR-fHQ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fmp-tI-eCN"/>
+                            <constraint firstItem="6Xo-7m-iql" firstAttribute="leading" secondItem="QgQ-MM-brJ" secondAttribute="leading" id="iXG-Op-YDa"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jUd-8E-MYY"/>
+                            <constraint firstItem="6Xo-7m-iql" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="k5w-0V-hQb"/>
+                            <constraint firstItem="6Xo-7m-iql" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="ole-zu-gDR"/>
+                            <constraint firstItem="6Xo-7m-iql" firstAttribute="centerX" secondItem="qNG-eR-fHQ" secondAttribute="centerX" id="ow6-aC-RuK"/>
+                            <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="6Xo-7m-iql" secondAttribute="centerX" id="r80-zs-Wvr"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="u7n-ZB-0gL"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="top" secondItem="kZ9-g2-4su" secondAttribute="bottom" constant="40" id="vzi-AT-qep"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="QgQ-MM-brJ" id="nrE-4Q-rBy"/>
+                        <outlet property="button2" destination="6Xo-7m-iql" id="THm-XR-9Ny"/>
+                        <outlet property="button3" destination="qNG-eR-fHQ" id="GcW-2e-l7o"/>
+                        <outlet property="button4" destination="kZ9-g2-4su" id="Dn8-kI-UNi"/>
+                        <outlet property="button5" destination="wPY-D9-niC" id="BvL-lQ-R3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="103.89805097451276"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="6Xo-7m-iql">
+            <size key="intrinsicContentSize" width="55" height="32"/>
+        </designable>
+        <designable name="QgQ-MM-brJ">
+            <size key="intrinsicContentSize" width="53" height="32"/>
+        </designable>
+        <designable name="kZ9-g2-4su">
+            <size key="intrinsicContentSize" width="59" height="33"/>
+        </designable>
+        <designable name="qNG-eR-fHQ">
+            <size key="intrinsicContentSize" width="99" height="32"/>
+        </designable>
+        <designable name="wPY-D9-niC">
+            <size key="intrinsicContentSize" width="109" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -1,0 +1,6 @@
+framework module Pods_QBIndicatorButton_Tests {
+  umbrella header "Pods-QBIndicatorButton_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
