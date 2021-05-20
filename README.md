@@ -28,9 +28,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Getting started
 
 ### Storyboard Setup
-Add UIButton to Storyboard and set custom class, module.
+Drag and drop `UIButton` into your Storyboard and set its class and module to `QBIndicatorButton`.
 
-![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png)
+Custom class and module |
+------------ |
+![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png "class")
+
+
+Customize your button by setting properties from the Interface Builder.
+
+Custom properties |
+------------ |
+![Custom properties](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png "properties")
 
 ### Code Setup
 ```swift
@@ -41,12 +50,12 @@ loadingButton = QBIndicatorButton(text: "Tap me",
                               backgroundColor: .systemBlue,
                               cornerRadius: 4.0)
 ```
-Touch Up Inside closure.
+Button touch closure.
 ```swift
-loadingButton.touch { btn in
+loadingButton.touch({ btn in
     // do stuff here
     btn.start()
-}
+}, for: .touchUpInside)
 ```
 
 Show loading indicator.

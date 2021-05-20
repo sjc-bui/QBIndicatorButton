@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E15740726563AFD00EB4D3B /* QBIndicatorButton-properties.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */; };
 		2EA22B742655002C00C6AE7D /* QBIndicatorButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EA22B732655002C00C6AE7D /* QBIndicatorButton.gif */; };
 		2EA22B762655094200C6AE7D /* QBIndicatorButton-class.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 		02B7A74F22330AB03C889A19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		06BBB611EF96B20AA6D12F31 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		085BE4BFF600122766077509 /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QBIndicatorButton.podspec; path = ../QBIndicatorButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QBIndicatorButton-properties.png"; sourceTree = "<group>"; };
 		2EA22B732655002C00C6AE7D /* QBIndicatorButton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QBIndicatorButton.gif; sourceTree = "<group>"; };
 		2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QBIndicatorButton-class.png"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* QBIndicatorButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBIndicatorButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA22B732655002C00C6AE7D /* QBIndicatorButton.gif */,
+				2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */,
 				2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */,
 			);
 			path = Screenshots;
@@ -263,6 +266,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				2EA22B742655002C00C6AE7D /* QBIndicatorButton.gif in Resources */,
+				2E15740726563AFD00EB4D3B /* QBIndicatorButton-properties.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				2EA22B762655094200C6AE7D /* QBIndicatorButton-class.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
