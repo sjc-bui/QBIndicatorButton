@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'QBIndicatorButton'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Custom of UIButton in Swift'
 
   s.description      = <<-DESC
-Activity Indicator Button written in Swift
+Activity Indicator UIButton library written in Swift
                        DESC
 
   s.homepage         = 'https://github.com/sjc-bui/QBIndicatorButton'
