@@ -41,6 +41,13 @@ loadingButton = QBIndicatorButton(text: "Tap me",
                               backgroundColor: .systemBlue,
                               cornerRadius: 4.0)
 ```
+Touch Up Inside closure.
+```swift
+loadingButton.touch { btn in
+    // do stuff here
+    btn.start()
+}
+```
 
 Show loading indicator.
 ```swift

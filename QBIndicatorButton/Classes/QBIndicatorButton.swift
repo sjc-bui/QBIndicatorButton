@@ -12,7 +12,7 @@ public typealias BtnCallBack = (() -> Void)?
 @IBDesignable
 open class QBIndicatorButton: UIButton {
 
-    private var activityIndicator: UIActivityIndicatorView!
+    public var activityIndicator: UIActivityIndicatorView!
 
     private var activityIndicatorColor: UIColor = .white
 
@@ -21,6 +21,8 @@ open class QBIndicatorButton: UIButton {
     private var indicatorPosition: IndicatorPosition = .center
 
     private var padding: CGFloat = 0.0
+
+    public var isLoading: Bool = false
 
     @IBInspectable open var animatedScale: CGFloat = 1.0
 
@@ -130,9 +132,20 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
+    fileprivate var action: ((_ button: QBIndicatorButton) -> Void)?
+
+    open func touch(action: ((_ button: QBIndicatorButton) -> Void)? = nil) {
+        self.action = action
+    }
+
+    @objc func touchUpInsideEvent(sender: QBIndicatorButton) {
+        self.action?(sender)
+    }
+
     override open func layoutSubviews() {
         super.layoutSubviews()
         gradient?.frame = self.layer.bounds
+        self.addTarget(self, action: #selector(touchUpInsideEvent), for: .touchUpInside)
     }
 
     public override init(frame: CGRect) {
@@ -180,6 +193,7 @@ open class QBIndicatorButton: UIButton {
         }
 
         self.isUserInteractionEnabled = false
+        self.isLoading = true
         activityIndicator.isUserInteractionEnabled = false
         let indicatorWidth = activityIndicator.frame.width != 0 ?
             activityIndicator.frame.width : 20
@@ -213,6 +227,7 @@ open class QBIndicatorButton: UIButton {
 
             self.activityIndicator.stopAnimating()
             self.isUserInteractionEnabled = true
+            self.isLoading = false
             self.activityIndicator.removeFromSuperview()
 
             UIView.transition(with: self,

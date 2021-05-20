@@ -21,22 +21,32 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         button1.tag = 1
-        button1.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
-
+        button1.touch { btn in
+            self.btnClick(btn)
+        }
         button2.tag = 2
-        button2.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
-
+        button2.touch { btn2 in
+            self.btnClick(btn2)
+        }
         button3.tag = 3
-        button3.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
-
+        button3.touch { btn3 in
+            self.btnClick(btn3)
+        }
         button4.tag = 4
-        button4.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
-        
+        button4.touch { btn4 in
+            self.btnClick(btn4)
+        }
         button5.tag = 5
-        button5.addTarget(self, action: #selector(btnClick(_:)), for: .touchUpInside)
+        button5.touch { btn5 in
+            btn5.start {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    btn5.stop()
+                }
+            }
+        }
     }
 
-    @objc func btnClick(_ sender: QBIndicatorButton) {
+    func btnClick(_ sender: QBIndicatorButton) {
         sender.start {
             print("button \(sender.tag) is starting...")
         }
