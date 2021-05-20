@@ -29,9 +29,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ### Storyboard Setup
 Drag and drop `UIButton` into your Storyboard and set its class and module to `QBIndicatorButton`.
+
 <img src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png" max-width="50%" height="auto">
 
 Customize your button by setting properties from the Interface Builder.
+
 <img src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png" max-width="50%" height="auto">
 
 ### Code Setup
@@ -76,20 +78,20 @@ Supported appearance properties are:
 
 | Property | Type | Description | Default value |
 | --- | --- | --- | --- |
-| `animatedScale` | `CGFloat` | Animated scale | 1.0 |
-| `animatedScaleDuration` | `Double` | Animated scale duration | 0.2 |
-| `borderColor` | `UIColor` | Border color | UIColor.clear |
-| `borderWidth` | `CGFloat` | Border width | 0.0 |
-| `cornerRadius` | `CGFloat` | Corner radius | 4.0 |
-| `shadowColor` | `UIColor` | The color of the layer's shadow | UIColor.clear |
-| `shadowOffset` | `CGSize` | The offset of the layer's shadow | .zero |
-| `shadowOpacity` | `Float` | The opacity of the layer's shadow | 0.0 |
-| `shadowRadius` | `CGFloat` | The blur radius of the layer's shadow | 0.0 |
-| `gradientEnabled` | `Bool` | Enable gradient background color | false |
-| `gradientStartColor` | `UIColor` | Start of color gradient | UIColor.clear |
-| `gradientEndColor` | `UIColor` | End of color gradient | UIColor.clear |
-| `gradientDirection` | `Int` | Direction of color gradient `0~7` | 1 |
-| `activityIndicatorPosition` | `Int` | Position of activity indicator `0~2` | 1 |
+| `animatedScale` | `CGFloat` | Animated scale | `1.0` |
+| `animatedScaleDuration` | `Double` | Animated scale duration | `0.2` |
+| `borderColor` | `UIColor` | Border color | `UIColor.clear` |
+| `borderWidth` | `CGFloat` | Border width | `0.0` |
+| `cornerRadius` | `CGFloat` | Corner radius | `4.0` |
+| `shadowColor` | `UIColor` | The color of the layer's shadow | `UIColor.clear` |
+| `shadowOffset` | `CGSize` | The offset of the layer's shadow | `.zero` |
+| `shadowOpacity` | `Float` | The opacity of the layer's shadow | `0.0` |
+| `shadowRadius` | `CGFloat` | The blur radius of the layer's shadow | `0.0` |
+| `gradientEnabled` | `Bool` | Enable gradient background color | `false` |
+| `gradientStartColor` | `UIColor` | Start of color gradient | `UIColor.clear` |
+| `gradientEndColor` | `UIColor` | End of color gradient | `UIColor.clear` |
+| `gradientDirection` | `Int` | Direction of color gradient `0~7` | `1` |
+| `activityIndicatorPosition` | `Int` | Position of activity indicator `0~2` | `1` |
 
 Predefined positions of activity indicator.
 ```swift
