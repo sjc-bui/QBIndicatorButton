@@ -21,29 +21,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         button1.tag = 1
-        button1.touch { btn in
-            self.btnClick(btn)
-        }
+        button1.touch({ btn1 in
+            self.btnClick(btn1)
+        }, for: .touchUpInside)
+
         button2.tag = 2
-        button2.touch { btn2 in
+        button2.touch({ btn2 in
             self.btnClick(btn2)
-        }
+        }, for: .touchUpInside)
+
         button3.tag = 3
-        button3.touch { btn3 in
+        button3.touch({ btn3 in
             self.btnClick(btn3)
-        }
+        }, for: .touchUpInside)
+
         button4.tag = 4
-        button4.touch { btn4 in
-            self.btnClick(btn4)
-        }
+        button4.touch({ btn in
+            self.btnClick(btn)
+        }, for: .touchUpInside)
+
         button5.tag = 5
-        button5.touch { btn5 in
+        button5.touch({ btn5 in
             btn5.start {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     btn5.stop()
                 }
             }
-        }
+        }, for: .touchUpInside)
     }
 
     func btnClick(_ sender: QBIndicatorButton) {

@@ -132,20 +132,20 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
-    fileprivate var action: ((_ button: QBIndicatorButton) -> Void)?
+    private var action: ((_ button: QBIndicatorButton) -> Void)?
 
-    open func touch(action: ((_ button: QBIndicatorButton) -> Void)? = nil) {
+    open func touch(_ action: ((_ button: QBIndicatorButton) -> Void)? = nil, for controlEvents: UIControl.Event) {
         self.action = action
+        self.addTarget(self, action: #selector(touchEvent), for: controlEvents)
     }
 
-    @objc func touchUpInsideEvent(sender: QBIndicatorButton) {
+    @objc private func touchEvent(sender: QBIndicatorButton) {
         self.action?(sender)
     }
 
     override open func layoutSubviews() {
         super.layoutSubviews()
         gradient?.frame = self.layer.bounds
-        self.addTarget(self, action: #selector(touchUpInsideEvent), for: .touchUpInside)
     }
 
     public override init(frame: CGRect) {
