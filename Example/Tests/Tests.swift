@@ -43,6 +43,17 @@ class Tests: XCTestCase {
         XCTAssertTrue(btn.gradientDirection == 1)
     }
 
+    func testButtonShadow() {
+        btn.shadowColor = .gray
+        btn.shadowOffset = CGSize(width: 0.5, height: 0.5)
+        btn.shadowOpacity = 0.7
+        btn.shadowRadius = 10
+        XCTAssertTrue(btn.shadowColor == UIColor.gray)
+        XCTAssertTrue(btn.shadowOffset == CGSize(width: 0.5, height: 0.5))
+        XCTAssertTrue(btn.shadowOpacity == 0.7)
+        XCTAssertTrue(btn.shadowRadius == 10)
+    }
+
     func testIndicatorPosition() {
         btn = QBIndicatorButton(text: "test3", textColor: .red)
         btn.activityIndicatorPosition = 1

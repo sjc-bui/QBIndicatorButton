@@ -36,8 +36,8 @@ class ViewController: UIViewController {
         }, for: .touchUpInside)
 
         button4.tag = 4
-        button4.touch({ btn in
-            self.btnClick(btn)
+        button4.touch({ btn4 in
+            self.btnClick(btn4)
         }, for: .touchUpInside)
 
         button5.tag = 5
