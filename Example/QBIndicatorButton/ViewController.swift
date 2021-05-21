@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         button1.tag = 1
-        button1.touch({ btn1 in
+        button1.touch({ [weak self] btn1 in
+            guard let self = self else { return }
             self.btnClick(btn1)
         }, for: .touchUpInside)
 
