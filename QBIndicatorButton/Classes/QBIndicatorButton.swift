@@ -134,7 +134,7 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
-    private var action: ((_ button: QBIndicatorButton) -> Void)?
+    fileprivate var action: ((_ button: QBIndicatorButton) -> Void)?
 
     open func touch(_ action: ((_ button: QBIndicatorButton) -> Void)? = nil, for controlEvents: UIControl.Event) {
         self.action = action

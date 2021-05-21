@@ -92,7 +92,7 @@ Supported appearance properties are:
 | `gradientEndColor` | `UIColor` | End of color gradient | `UIColor.clear` |
 | `gradientDirection` | `Int` | Direction of color gradient `0~7` | `1` |
 | `activityIndicatorPosition` | `Int` | Position of activity indicator `0~2` | `1` |
-| `titleFadeDuration` (v0.1.4) | `Double` | Button title fade animated duration | `0.3` |
+| `titleFadeDuration` | `Double` | Button title fade animated duration | `0.3` |
 
 Predefined positions of activity indicator.
 ```swift
