@@ -7,7 +7,9 @@
 
 import UIKit
 
-public typealias BtnCallBack = (() -> Void)?
+public typealias ActionCompletionHandler = (() -> Void)?
+
+public typealias ButtonHandler = ((_ button: QBIndicatorButton) -> Void)?
 
 @IBDesignable
 open class QBIndicatorButton: UIButton {
@@ -134,17 +136,6 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
-    fileprivate var action: ((_ button: QBIndicatorButton) -> Void)?
-
-    open func touch(_ action: ((_ button: QBIndicatorButton) -> Void)? = nil, for controlEvents: UIControl.Event) {
-        self.action = action
-        self.addTarget(self, action: #selector(touchEvent), for: controlEvents)
-    }
-
-    @objc private func touchEvent(sender: QBIndicatorButton) {
-        self.action?(sender)
-    }
-
     override open func layoutSubviews() {
         super.layoutSubviews()
         gradient?.frame = self.layer.bounds
@@ -187,9 +178,34 @@ open class QBIndicatorButton: UIButton {
         super.init(coder: coder)
     }
 
+    /// Round every corner of the button
+    /// - Parameters:
+    ///   - corners: topLeft, topRight, bottomRight, bottomLeft
+    ///   - radius: custom coner radius - default = 4
+    open func roundCorners(corners: UIRectCorner, radius: Int = 4) {
+        let maskPath = UIBezierPath(roundedRect: bounds,
+                                byRoundingCorners: corners,
+                                cornerRadii: CGSize(width: radius, height: radius))
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = bounds
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+    }
+
+    fileprivate var action: ((_ button: QBIndicatorButton) -> Void)?
+
+    open func touch(_ action: ButtonHandler = nil, for controlEvents: UIControl.Event) {
+        self.action = action
+        self.addTarget(self, action: #selector(touchEvent), for: controlEvents)
+    }
+
+    @objc private func touchEvent(sender: QBIndicatorButton) {
+        self.action?(sender)
+    }
+
     /// Display activity indicator inside the button
     /// - Parameter completion: The completion handler
-    open func start(_ completion: BtnCallBack = nil) {
+    open func start(_ completion: ActionCompletionHandler = nil) {
         if activityIndicator == nil {
             activityIndicator = createActivityIndicator()
         }
@@ -220,7 +236,7 @@ open class QBIndicatorButton: UIButton {
 
     /// Hide activity indicator inside the button
     /// - Parameter completion: The completion handler
-    open func stop(_ completion: BtnCallBack = nil) {
+    open func stop(_ completion: ActionCompletionHandler = nil) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self,
                   self.activityIndicator != nil else {
