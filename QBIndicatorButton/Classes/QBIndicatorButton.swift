@@ -112,6 +112,8 @@ open class QBIndicatorButton: UIButton {
         }
     }
 
+    @IBInspectable open var titleFadeDuration: Double = 0.3
+
     var gradient: CAGradientLayer?
 
     func customGradient() {
@@ -205,7 +207,7 @@ open class QBIndicatorButton: UIButton {
             UIView.animate(withDuration: self.animatedScaleDuration) {
                 self.transform = CGAffineTransform.identity
             } completion: { done in
-                UIView.transition(with: self, duration: 0.5, options: .curveEaseOut) {
+                UIView.transition(with: self, duration: self.titleFadeDuration, options: .curveEaseOut) {
                     self.alpha = 0.8
                     self.titleLabel?.alpha = self.indicatorPosition == .center ? 0.0 : 0.6
                 } completion: { _ in
@@ -231,7 +233,7 @@ open class QBIndicatorButton: UIButton {
             self.activityIndicator.removeFromSuperview()
 
             UIView.transition(with: self,
-                              duration: 0.5,
+                              duration: self.titleFadeDuration,
                               options: .curveEaseOut) {
                 self.alpha = 1.0
                 self.titleLabel?.alpha = 1.0
