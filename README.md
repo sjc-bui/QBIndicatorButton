@@ -94,6 +94,15 @@ Supported appearance properties are:
 | `activityIndicatorPosition` | `Int` | Position of activity indicator `0~2` | `1` |
 | `titleFadeDuration` | `Double` | Button title fade animated duration | `0.3` |
 
+`QBIndicatorButton` also supported round every single corner of the button.
+```swift
+// round topLeft and topRight corner only
+loadingButton.roundCorners(corners: [.topLeft, .topRight], radius: 20)
+// or
+// round all corner
+loadingButton.roundCorners(corners: [.allCorners], radius: 20)
+```
+
 Predefined positions of activity indicator.
 ```swift
 public enum IndicatorPosition: Int {

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        button1.roundCorners(corners: [.topLeft, .bottomLeft], radius: 30)
+        button1.roundCorners(corners: [.topLeft, .topRight], radius: 20)
         button1.tag = 1
         button1.touch({ [weak self] btn1 in
             guard let self = self else { return }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             self.btnClick(btn4)
         }, for: .touchUpInside)
 
-        button5.roundCorners(corners: [.topRight], radius: 30)
+        button5.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 30)
         button5.tag = 5
         button5.touch({ btn5 in
             btn5.start {
