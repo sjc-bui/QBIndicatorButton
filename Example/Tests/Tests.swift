@@ -8,7 +8,7 @@ class Tests: XCTestCase {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
@@ -20,11 +20,11 @@ class Tests: XCTestCase {
                                     font: UIFont.systemFont(ofSize: 18),
                                     backgroundColor: .green,
                                     cornerRadius: 6.0)
-        XCTAssertTrue(btn.titleLabel?.text == "test")
-        XCTAssertTrue(btn.titleLabel?.textColor == .white)
-        XCTAssertTrue(btn.titleLabel?.font == .systemFont(ofSize: 18))
-        XCTAssertTrue(btn.backgroundColor == .green)
-        XCTAssertTrue(btn.layer.cornerRadius == 6.0)
+        XCTAssertEqual(btn.titleLabel?.text, "test")
+        XCTAssertEqual(btn.titleLabel?.textColor, .white)
+        XCTAssertEqual(btn.titleLabel?.font, .systemFont(ofSize: 18))
+        XCTAssertEqual(btn.backgroundColor, .green)
+        XCTAssertEqual(btn.layer.cornerRadius, 6.0)
     }
 
     func testGradientBackground() {
@@ -33,14 +33,14 @@ class Tests: XCTestCase {
         btn.gradientStartColor = .red
         btn.gradientEndColor = .blue
         btn.gradientDirection = 1
-        XCTAssertTrue(btn.titleLabel?.text == "test2")
-        XCTAssertTrue(btn.titleLabel?.textColor == .white)
-        XCTAssertTrue(btn.backgroundColor == .black)
-        XCTAssertTrue(btn.layer.cornerRadius == 4.0)
-        XCTAssertTrue(btn.gradientEnabled == true)
-        XCTAssertTrue(btn.gradientStartColor == UIColor.red)
-        XCTAssertTrue(btn.gradientEndColor == UIColor.blue)
-        XCTAssertTrue(btn.gradientDirection == 1)
+        XCTAssertEqual(btn.titleLabel?.text, "test2")
+        XCTAssertEqual(btn.titleLabel?.textColor, .white)
+        XCTAssertEqual(btn.backgroundColor, .black)
+        XCTAssertEqual(btn.layer.cornerRadius, 4.0)
+        XCTAssertTrue(btn.gradientEnabled)
+        XCTAssertEqual(btn.gradientStartColor, UIColor.red)
+        XCTAssertEqual(btn.gradientEndColor, UIColor.blue)
+        XCTAssertEqual(btn.gradientDirection, 1)
     }
 
     func testButtonShadow() {
@@ -57,9 +57,14 @@ class Tests: XCTestCase {
     func testIndicatorPosition() {
         btn = QBIndicatorButton(text: "test3", textColor: .red)
         btn.activityIndicatorPosition = 1
-        XCTAssertTrue(btn.titleLabel?.text == "test3")
-        XCTAssertTrue(btn.titleLabel?.textColor == .red)
-        XCTAssertTrue(btn.activityIndicatorPosition == 1)
+        XCTAssertEqual(btn.titleLabel?.text, "test3")
+        XCTAssertEqual(btn.titleLabel?.textColor, .red)
+        XCTAssertEqual(btn.activityIndicatorPosition, 1)
+    }
+
+    func testTitleFade() {
+        btn.titleFadeDuration = 0.5
+        XCTAssertEqual(btn.titleFadeDuration, 0.5)
     }
 
     func testStartLoading() {
