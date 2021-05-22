@@ -1,5 +1,6 @@
 # QBIndicatorButton
 
+[![Build Status](https://www.travis-ci.com/sjc-bui/QBIndicatorButton.svg?branch=master)](https://www.travis-ci.com/sjc-bui/QBIndicatorButton)
 [![Version](https://img.shields.io/cocoapods/v/QBIndicatorButton.svg?style=flat)](https://cocoapods.org/pods/QBIndicatorButton)
 [![License](https://img.shields.io/cocoapods/l/QBIndicatorButton.svg?style=flat)](https://cocoapods.org/pods/QBIndicatorButton)
 [![Platform](https://img.shields.io/cocoapods/p/QBIndicatorButton.svg?style=flat)](https://cocoapods.org/pods/QBIndicatorButton)
