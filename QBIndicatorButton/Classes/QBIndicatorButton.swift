@@ -206,12 +206,15 @@ open class QBIndicatorButton: UIButton {
     /// Display activity indicator inside the button
     /// - Parameter completion: The completion handler
     open func start(_ completion: ActionCompletionHandler = nil) {
+        guard !isLoading else { return }
+
         if activityIndicator == nil {
             activityIndicator = createActivityIndicator()
         }
 
         self.isUserInteractionEnabled = false
         self.isLoading = true
+
         activityIndicator.isUserInteractionEnabled = false
         let indicatorWidth = activityIndicator.frame.width != 0 ?
             activityIndicator.frame.width : 20
@@ -219,10 +222,10 @@ open class QBIndicatorButton: UIButton {
 
         UIView.animate(withDuration: animatedScaleDuration) {
             self.transform = CGAffineTransform(scaleX: self.animatedScale, y: self.animatedScale)
-        } completion: { done in
+        } completion: { _ in
             UIView.animate(withDuration: self.animatedScaleDuration) {
                 self.transform = CGAffineTransform.identity
-            } completion: { done in
+            } completion: { _ in
                 UIView.transition(with: self, duration: self.titleFadeDuration, options: .curveEaseOut) {
                     self.alpha = 0.8
                     self.titleLabel?.alpha = self.indicatorPosition == .center ? 0.0 : 0.6
@@ -237,31 +240,30 @@ open class QBIndicatorButton: UIButton {
     /// Hide activity indicator inside the button
     /// - Parameter completion: The completion handler
     open func stop(_ completion: ActionCompletionHandler = nil) {
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self,
-                  self.activityIndicator != nil else {
-                return
-            }
+        guard isLoading else { return }
 
+        self.isUserInteractionEnabled = true
+        self.isLoading = false
+
+        UIView.animate(withDuration: 0.2) {
+            self.activityIndicator.alpha = 0
+        } completion: { _ in
             self.activityIndicator.stopAnimating()
-            self.isUserInteractionEnabled = true
-            self.isLoading = false
             self.activityIndicator.removeFromSuperview()
+        }
 
-            UIView.transition(with: self,
-                              duration: self.titleFadeDuration,
-                              options: .curveEaseOut) {
-                self.alpha = 1.0
-                self.titleLabel?.alpha = 1.0
-            } completion: { _ in
-                completion?()
-            }
+        UIView.transition(with: self,
+                          duration: self.titleFadeDuration,
+                          options: .curveEaseOut) {
+            self.alpha = 1.0
+            self.titleLabel?.alpha = 1.0
+        } completion: { _ in
+            completion?()
         }
     }
 
     private func createActivityIndicator() -> UIActivityIndicatorView {
         let activityIndicator = UIActivityIndicatorView()
-        activityIndicator.hidesWhenStopped = true
         activityIndicator.color = activityIndicatorColor
         return activityIndicator
     }
@@ -271,6 +273,10 @@ open class QBIndicatorButton: UIButton {
         self.addSubview(activityIndicator)
         positionActivityIndicator()
         activityIndicator.startAnimating()
+        activityIndicator.alpha = 0
+        UIView.animate(withDuration: 0.2) {
+            self.activityIndicator.alpha = 1
+        }
     }
 
     private func positionActivityIndicator() {
