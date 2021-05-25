@@ -6,9 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/QBIndicatorButton.svg?style=flat)](https://cocoapods.org/pods/QBIndicatorButton)
 
 Custom of UIButton in Swift.
-Example |
------------- |
-![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton.gif)
+
+![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton.gif?raw=true)
 
 ## Example
 
@@ -24,18 +23,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 - Swift 5.0
-- iOS 12.0+
+- iOS 11.0+
 
 ## Getting started
 
 ### Storyboard Setup
 Drag and drop `UIButton` into your Storyboard and set its class and module to `QBIndicatorButton`.
 
-<img src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png" max-width="50%" height="auto">
+![Custom class](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png?raw=true)
 
 Customize your button by setting properties from the Interface Builder.
 
-<img src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png" max-width="50%" height="auto">
+![Custom properties](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png?raw=true)
 
 ### Code Setup
 ```swift

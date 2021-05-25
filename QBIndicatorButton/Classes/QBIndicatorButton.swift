@@ -227,7 +227,7 @@ open class QBIndicatorButton: UIButton {
                 self.transform = CGAffineTransform.identity
             } completion: { _ in
                 UIView.transition(with: self, duration: self.titleFadeDuration, options: .curveEaseOut) {
-                    self.alpha = 0.8
+                    self.alpha = 0.9
                     self.titleLabel?.alpha = self.indicatorPosition == .center ? 0.0 : 0.6
                 } completion: { _ in
                     self.showSpinning()
