@@ -1,16 +1,16 @@
 import XCTest
-import QBIndicatorButton
+@testable import QBIndicatorButton
 
 class Tests: XCTestCase {
-    var btn = QBIndicatorButton()
+    var btn: QBIndicatorButton!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        btn = QBIndicatorButton(frame: .zero)
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        btn = nil
         super.tearDown()
     }
 
@@ -65,6 +65,24 @@ class Tests: XCTestCase {
     func testTitleFade() {
         btn.titleFadeDuration = 0.5
         XCTAssertEqual(btn.titleFadeDuration, 0.5)
+    }
+
+    func testIndicatorStartAnimating() {
+        btn.indicatorStrokeColor = .red
+        btn.indicatorStrokeWidth = 2
+        btn.indicatorRotateDuration = 2
+        XCTAssertTrue(btn.indicator.isHidden)
+        btn.indicator.isAnimating = true
+        XCTAssertFalse(btn.indicator.isHidden)
+        XCTAssertEqual(btn.indicatorStrokeColor, .red)
+        XCTAssertEqual(btn.indicatorStrokeWidth, 2)
+        XCTAssertEqual(btn.indicatorRotateDuration, 2)
+    }
+
+    func testIndicatorStopAnimating() {
+        btn.indicator.isAnimating = true
+        btn.indicator.isAnimating = false
+        XCTAssertTrue(btn.indicator.isHidden)
     }
 
     func testStartLoading() {

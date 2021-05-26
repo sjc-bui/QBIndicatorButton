@@ -159,7 +159,7 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
-    private var indicator = QBContinuousIndicator()
+    let indicator: QBContinuousIndicator = QBContinuousIndicator()
 
     override open func layoutSubviews() {
         super.layoutSubviews()

@@ -21,7 +21,7 @@ extension UIView {
     }
 }
 
-class QBContinuousIndicator: UIView {
+public class QBContinuousIndicator: UIView {
 
     public var strokeWidth: CGFloat   = 3.0
     public var rotateDuration: CfTime = 1.0
@@ -53,7 +53,7 @@ class QBContinuousIndicator: UIView {
         self.backgroundColor = .clear
     }
 
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         let width = bounds.width
         let height = bounds.height
         let radius = (min(width, height) - strokeWidth) / 2
