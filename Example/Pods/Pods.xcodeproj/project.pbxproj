@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C057A3A121DFF1D34268AD444810EE7 /* Pods-QBIndicatorButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987836B2F3715CE869D02D06E317F04B /* Pods-QBIndicatorButton_Example-dummy.m */; };
+		2EB4848E265DCDE7000C5A1E /* QBContinuousIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */; };
 		4B1C69AF9C42A713830BD4BBE8EB6515 /* QBIndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */; };
 		6FCAF91383847E5D0404638476860851 /* QBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6CDD62E99A9372409C586175F0444 /* QBExtensions.swift */; };
 		71CAAEB52BDB4EFCFA772E5A55540ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -43,8 +44,9 @@
 		085D9F581A9E6509BE895AB3DC30F32E /* QBIndicatorButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.release.xcconfig; sourceTree = "<group>"; };
 		0CC3CCE9139E9AA7C74D808E90D246C4 /* Pods-QBIndicatorButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Tests-Info.plist"; sourceTree = "<group>"; };
 		158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBIndicatorButton.swift; path = QBIndicatorButton/Classes/QBIndicatorButton.swift; sourceTree = "<group>"; };
-		178C529A279ED51A879780B0AA789ECD /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QBIndicatorButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		178C529A279ED51A879780B0AA789ECD /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QBIndicatorButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2C9E3F73DCBCACA6BBDED7C496B06FEA /* Pods-QBIndicatorButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QBIndicatorButton_Tests.modulemap"; sourceTree = "<group>"; };
+		2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QBContinuousIndicator.swift; path = QBIndicatorButton/Classes/QBContinuousIndicator.swift; sourceTree = "<group>"; };
 		3584B701DAF22E11D1C1362AFE40F19B /* QBIndicatorButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-umbrella.h"; sourceTree = "<group>"; };
 		3F87E6476CB674C23737C33481DAF35D /* Pods-QBIndicatorButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Example-Info.plist"; sourceTree = "<group>"; };
 		495B936C03610A63E7967E91F8004669 /* Pods-QBIndicatorButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QBIndicatorButton_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -55,25 +57,25 @@
 		690C9D3CFF5342F706C7948781E5643A /* Pods-QBIndicatorButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6991B1F87420307A37A581239DA08BDE /* Pods-QBIndicatorButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QBIndicatorButton_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6E26E191185A7C70759CD9B5C14F6172 /* Pods-QBIndicatorButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QBIndicatorButton_Example.modulemap"; sourceTree = "<group>"; };
-		6FA91D26ADEB0D95E0474C2074AE7C46 /* Pods_QBIndicatorButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QBIndicatorButton_Example.framework; path = "Pods-QBIndicatorButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA91D26ADEB0D95E0474C2074AE7C46 /* Pods_QBIndicatorButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBIndicatorButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		79F17E16562490BD9F3325D2A5DAD6EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		79F17E16562490BD9F3325D2A5DAD6EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C8E16FC34719D90D96967F03D92F0BF /* Pods-QBIndicatorButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7EBA4827603865F160C3625AC4AC0195 /* QBIndicatorButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QBIndicatorButton-dummy.m"; sourceTree = "<group>"; };
 		81D6CDD62E99A9372409C586175F0444 /* QBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBExtensions.swift; path = QBIndicatorButton/Classes/QBExtensions.swift; sourceTree = "<group>"; };
 		85461145A011005EAAD8F9372737D1F7 /* QBIndicatorButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QBIndicatorButton-Info.plist"; sourceTree = "<group>"; };
 		890B16760157370A1415004E47A3A843 /* Pods-QBIndicatorButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		89AB120A7FD9C150248C65F962E0FA32 /* Pods-QBIndicatorButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QBIndicatorButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		8ADA7044441751A8B97D16AC7120D119 /* QBIndicatorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QBIndicatorButton.framework; path = QBIndicatorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADA7044441751A8B97D16AC7120D119 /* QBIndicatorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QBIndicatorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E345CC7A3CADC572A10B1EBFD48137 /* QBIndicatorButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-prefix.pch"; sourceTree = "<group>"; };
 		987836B2F3715CE869D02D06E317F04B /* Pods-QBIndicatorButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QBIndicatorButton_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3D6C0F0AD7CC59E4C0561471A030C97 /* Pods_QBIndicatorButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QBIndicatorButton_Tests.framework; path = "Pods-QBIndicatorButton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3D6C0F0AD7CC59E4C0561471A030C97 /* Pods_QBIndicatorButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBIndicatorButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60F4F2253BD0AA036B67ADA87489BF7 /* IndicatorPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorPosition.swift; path = QBIndicatorButton/Classes/IndicatorPosition.swift; sourceTree = "<group>"; };
 		CA87887B0E9EB0455F3CACE5F09D54DF /* Pods-QBIndicatorButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QBIndicatorButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E1B7D3949AF692E0B1264051E249421C /* QBIndicatorButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.debug.xcconfig; sourceTree = "<group>"; };
 		E492A91CC56918487617EF7785B307EB /* Pods-QBIndicatorButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAB3BE4318D335C2E084491A3F471D29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EAB3BE4318D335C2E084491A3F471D29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EE454EA7BE1B805F94C5F20CEB500376 /* Pods-QBIndicatorButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QBIndicatorButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F7D8A33A93AD4785EA9FB8E642B485A8 /* GradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDirection.swift; path = QBIndicatorButton/Classes/GradientDirection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */,
 				CFDDAF0BCE924AC99F18399F4694CAF5 /* Pod */,
 				FC25ABE563896F57F019F109A9E87E7F /* Support Files */,
+				2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */,
 			);
 			name = QBIndicatorButton;
 			path = ../..;
@@ -381,6 +384,7 @@
 				6FCAF91383847E5D0404638476860851 /* QBExtensions.swift in Sources */,
 				C6B1130BD908004D466F877C4DE94776 /* QBIndicatorButton-dummy.m in Sources */,
 				4B1C69AF9C42A713830BD4BBE8EB6515 /* QBIndicatorButton.swift in Sources */,
+				2EB4848E265DCDE7000C5A1E /* QBContinuousIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,8 +579,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

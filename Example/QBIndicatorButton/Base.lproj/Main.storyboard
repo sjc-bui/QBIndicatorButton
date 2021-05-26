@@ -132,13 +132,16 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="activityIndicatorPosition">
-                                        <integer key="value" value="0"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-D9-niC" userLabel="button5" customClass="QBIndicatorButton" customModule="QBIndicatorButton">
-                                <rect key="frame" x="98.5" y="490" width="178" height="51"/>
+                                <rect key="frame" x="98.5" y="490" width="178" height="73"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="xvP-Ds-e2Z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Tap me again!">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -167,22 +170,21 @@
                             <constraint firstItem="QgQ-MM-brJ" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="5TH-wN-r3R"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="QgQ-MM-brJ" secondAttribute="centerX" id="6AG-en-LAw"/>
                             <constraint firstItem="6Xo-7m-iql" firstAttribute="top" secondItem="QgQ-MM-brJ" secondAttribute="bottom" constant="38" id="8u4-kU-Qy7"/>
-                            <constraint firstItem="wPY-D9-niC" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="9fn-VP-yuC"/>
-                            <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="wPY-D9-niC" secondAttribute="centerX" id="Ekl-UM-XTc"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="top" secondItem="qNG-eR-fHQ" secondAttribute="bottom" constant="131" id="CtT-p9-KNj"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="top" secondItem="qNG-eR-fHQ" secondAttribute="bottom" constant="40" id="GAG-WW-LuR"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="GUf-B9-Wpj"/>
                             <constraint firstItem="qNG-eR-fHQ" firstAttribute="top" secondItem="6Xo-7m-iql" secondAttribute="bottom" constant="43" id="PuZ-7m-mLi"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="d1T-Dc-PRd"/>
                             <constraint firstItem="QgQ-MM-brJ" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="eYH-iP-pFK"/>
                             <constraint firstItem="qNG-eR-fHQ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fmp-tI-eCN"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="g4G-H4-HWH"/>
                             <constraint firstItem="6Xo-7m-iql" firstAttribute="leading" secondItem="QgQ-MM-brJ" secondAttribute="leading" id="iXG-Op-YDa"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jUd-8E-MYY"/>
                             <constraint firstItem="6Xo-7m-iql" firstAttribute="height" secondItem="qNG-eR-fHQ" secondAttribute="height" id="k5w-0V-hQb"/>
                             <constraint firstItem="6Xo-7m-iql" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="ole-zu-gDR"/>
                             <constraint firstItem="6Xo-7m-iql" firstAttribute="centerX" secondItem="qNG-eR-fHQ" secondAttribute="centerX" id="ow6-aC-RuK"/>
                             <constraint firstItem="kZ9-g2-4su" firstAttribute="centerX" secondItem="6Xo-7m-iql" secondAttribute="centerX" id="r80-zs-Wvr"/>
-                            <constraint firstItem="wPY-D9-niC" firstAttribute="width" secondItem="qNG-eR-fHQ" secondAttribute="width" id="u7n-ZB-0gL"/>
-                            <constraint firstItem="wPY-D9-niC" firstAttribute="top" secondItem="kZ9-g2-4su" secondAttribute="bottom" constant="40" id="vzi-AT-qep"/>
+                            <constraint firstItem="wPY-D9-niC" firstAttribute="leading" secondItem="kZ9-g2-4su" secondAttribute="leading" id="ymC-Ah-J2v"/>
                         </constraints>
                     </view>
                     <connections>
