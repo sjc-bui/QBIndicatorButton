@@ -70,12 +70,10 @@ class Tests: XCTestCase {
     func testStartLoading() {
         btn.start()
         XCTAssertTrue(btn.isLoading)
-        XCTAssertNotNil(btn.activityIndicator)
     }
 
     func testStopLoading() {
         btn.stop()
         XCTAssertFalse(btn.isLoading)
-        XCTAssertNil(btn.activityIndicator)
     }
 }

@@ -14,15 +14,11 @@ public typealias ButtonHandler = ((_ button: QBIndicatorButton) -> Void)?
 @IBDesignable
 open class QBIndicatorButton: UIButton {
 
-    public var activityIndicator: UIActivityIndicatorView!
-
     private var activityIndicatorColor: UIColor = .white
 
     private var direction: GradientDirection = .toRight
 
     private var indicatorPosition: IndicatorPosition = .center
-
-    private var padding: CGFloat = 0.0
 
     public var isLoading: Bool = false
 
@@ -136,6 +132,8 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
+    private var circle = QBContinuousIndicator()
+
     override open func layoutSubviews() {
         super.layoutSubviews()
         gradient?.frame = self.layer.bounds
@@ -208,17 +206,8 @@ open class QBIndicatorButton: UIButton {
     open func start(_ completion: ActionCompletionHandler = nil) {
         guard !isLoading else { return }
 
-        if activityIndicator == nil {
-            activityIndicator = createActivityIndicator()
-        }
-
         self.isUserInteractionEnabled = false
         self.isLoading = true
-
-        activityIndicator.isUserInteractionEnabled = false
-        let indicatorWidth = activityIndicator.frame.width != 0 ?
-            activityIndicator.frame.width : 20
-        self.padding = (self.frame.height - indicatorWidth) / 2
 
         UIView.animate(withDuration: animatedScaleDuration) {
             self.transform = CGAffineTransform(scaleX: self.animatedScale, y: self.animatedScale)
@@ -230,7 +219,7 @@ open class QBIndicatorButton: UIButton {
                     self.alpha = 0.9
                     self.titleLabel?.alpha = self.indicatorPosition == .center ? 0.0 : 0.6
                 } completion: { _ in
-                    self.showSpinning()
+                    self.showIndicator()
                     completion?()
                 }
             }
@@ -246,10 +235,10 @@ open class QBIndicatorButton: UIButton {
         self.isLoading = false
 
         UIView.animate(withDuration: 0.2) {
-            self.activityIndicator.alpha = 0
+            self.circle.alpha = 0
         } completion: { _ in
-            self.activityIndicator.stopAnimating()
-            self.activityIndicator.removeFromSuperview()
+            self.circle.isAnimating = false
+            self.circle.removeFromSuperview()
         }
 
         UIView.transition(with: self,
@@ -262,38 +251,32 @@ open class QBIndicatorButton: UIButton {
         }
     }
 
-    private func createActivityIndicator() -> UIActivityIndicatorView {
-        let activityIndicator = UIActivityIndicatorView()
-        activityIndicator.color = activityIndicatorColor
-        return activityIndicator
-    }
+    private func showIndicator() {
+        circle.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(circle)
+        positionCircleIndicator()
 
-    private func showSpinning() {
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(activityIndicator)
-        positionActivityIndicator()
-        activityIndicator.startAnimating()
-        activityIndicator.alpha = 0
+        circle.alpha = 0
+        circle.isAnimating = true
         UIView.animate(withDuration: 0.2) {
-            self.activityIndicator.alpha = 1
+            self.circle.alpha = 1
         }
     }
 
-    private func positionActivityIndicator() {
-        var nsLayout: NSLayoutConstraint!
+    private func positionCircleIndicator() {
+        let frameHeight = self.frame.height
+        circle.widthAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
+        circle.heightAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
+
         switch indicatorPosition {
         case .left:
-            nsLayout = NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: activityIndicator, attribute: .leading, multiplier: 1, constant: -padding)
+            circle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: frameHeight * 0.25).isActive = true
         case .center:
-            nsLayout = NSLayoutConstraint(item: self, attribute: .centerX, relatedBy: .equal, toItem: activityIndicator, attribute: .centerX, multiplier: 1, constant: 0)
+            circle.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         case .right:
-            nsLayout = NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: activityIndicator, attribute: .trailing, multiplier: 1, constant: padding)
+            circle.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -frameHeight * 0.25).isActive = true
         }
-
-        self.addConstraint(nsLayout)
-
-        let yCenterConstraint = NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: activityIndicator, attribute: .centerY, multiplier: 1, constant: 0)
-        self.addConstraint(yCenterConstraint)
+        circle.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
 
     private func directionPoint(_ size: CGSize) -> (start: CGPoint, end: CGPoint) {
