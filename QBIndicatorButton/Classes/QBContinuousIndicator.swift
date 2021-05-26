@@ -37,15 +37,14 @@ class QBContinuousIndicator: UIView {
         setUp()
     }
 
-    var isAnimating: Bool = false {
+    public var isAnimating: Bool = false {
         didSet {
             if isAnimating {
-                self.isHidden = false
                 self.rotate360(duration: rotateDuration)
             } else {
-                self.isHidden = true
                 self.layer.removeAllAnimations()
             }
+            self.isHidden = !isAnimating
         }
     }
 
