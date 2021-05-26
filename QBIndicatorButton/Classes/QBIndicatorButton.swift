@@ -112,6 +112,12 @@ open class QBIndicatorButton: UIButton {
 
     @IBInspectable open var titleFadeDuration: Double = 0.3
 
+    open var indicatorRotateDuration: CfTime = 1.0
+
+    open var indicatorStrokeColor: UIColor = .white
+
+    open var indicatorStrokeWidth: CGFloat = 3.0
+
     var gradient: CAGradientLayer?
 
     func customGradient() {
@@ -132,7 +138,7 @@ open class QBIndicatorButton: UIButton {
         self.layer.insertSublayer(gradient, below: self.imageView?.layer)
     }
 
-    private var circle = QBContinuousIndicator()
+    private var indicator = QBContinuousIndicator()
 
     override open func layoutSubviews() {
         super.layoutSubviews()
@@ -216,7 +222,7 @@ open class QBIndicatorButton: UIButton {
                 self.transform = CGAffineTransform.identity
             } completion: { _ in
                 UIView.transition(with: self, duration: self.titleFadeDuration, options: .curveEaseOut) {
-                    self.alpha = 0.9
+                    self.alpha = 0.96
                     self.titleLabel?.alpha = self.indicatorPosition == .center ? 0.0 : 0.6
                 } completion: { _ in
                     self.showIndicator()
@@ -235,10 +241,10 @@ open class QBIndicatorButton: UIButton {
         self.isLoading = false
 
         UIView.animate(withDuration: 0.2) {
-            self.circle.alpha = 0
+            self.indicator.alpha = 0
         } completion: { _ in
-            self.circle.isAnimating = false
-            self.circle.removeFromSuperview()
+            self.indicator.isAnimating = false
+            self.indicator.removeFromSuperview()
         }
 
         UIView.transition(with: self,
@@ -252,31 +258,35 @@ open class QBIndicatorButton: UIButton {
     }
 
     private func showIndicator() {
-        circle.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(circle)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(indicator)
         positionCircleIndicator()
 
-        circle.alpha = 0
-        circle.isAnimating = true
+        indicator.rotateDuration = indicatorRotateDuration
+        indicator.strokeWidth = indicatorStrokeWidth
+        indicator.foregroundColor = indicatorStrokeColor
+        indicator.alpha = 0
+        indicator.isAnimating = true
+
         UIView.animate(withDuration: 0.2) {
-            self.circle.alpha = 1
+            self.indicator.alpha = 1
         }
     }
 
     private func positionCircleIndicator() {
         let frameHeight = self.frame.height
-        circle.widthAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
-        circle.heightAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
+        indicator.widthAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: frameHeight / 2).isActive = true
 
         switch indicatorPosition {
         case .left:
-            circle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: frameHeight * 0.25).isActive = true
+            indicator.leftAnchor.constraint(equalTo: self.leftAnchor, constant: frameHeight * 0.25).isActive = true
         case .center:
-            circle.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+            indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         case .right:
-            circle.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -frameHeight * 0.25).isActive = true
+            indicator.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -frameHeight * 0.25).isActive = true
         }
-        circle.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
 
     private func directionPoint(_ size: CGSize) -> (start: CGPoint, end: CGPoint) {
@@ -285,26 +295,26 @@ open class QBIndicatorButton: UIButton {
             return (CGPoint(x: size.width / 2, y: size.height),
                     CGPoint(x: size.width / 2, y: 0.0))
         case .toRight:
-            return (CGPoint(x: 0.0, y: size.width / 2),
+            return (CGPoint(x: 0.0,        y: size.width / 2),
                     CGPoint(x: size.width, y: size.height / 2))
         case .toBottom:
             return (CGPoint(x: size.width / 2, y: 0.0),
                     CGPoint(x: size.width / 2, y: size.height))
         case .toLeft:
             return (CGPoint(x: size.width, y: size.height / 2),
-                    CGPoint(x: 0.0, y: size.height / 2))
+                    CGPoint(x: 0.0,        y: size.height / 2))
         case .toTopRight:
-            return (CGPoint(x: 0.0, y: size.height),
+            return (CGPoint(x: 0.0,        y: size.height),
                     CGPoint(x: size.width, y: 0.0))
         case .toTopLeft:
             return (CGPoint(x: size.width, y: size.height),
-                    CGPoint(x: 0.0, y: 0.0))
+                    CGPoint(x: 0.0,        y: 0.0))
         case .toBottomRight:
-            return (CGPoint(x: 0.0, y: 0.0),
+            return (CGPoint(x: 0.0,        y: 0.0),
                     CGPoint(x: size.width, y: size.height))
         case .toBottomLeft:
             return (CGPoint(x: size.width, y: 0.0),
-                    CGPoint(x: 0.0, y: size.height))
+                    CGPoint(x: 0.0,        y: size.height))
         }
     }
 }

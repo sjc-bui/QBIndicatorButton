@@ -23,12 +23,11 @@ extension UIView {
 
 class QBContinuousIndicator: UIView {
 
-    let strokeWidth: CGFloat = 3.0
-
+    public var strokeWidth: CGFloat     = 1.0
     public var rotateDuration: CfTime   = 1.0
     public var foregroundColor: UIColor = .white
 
-    override init(frame: CGRect) {
+    override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setUp()
     }
@@ -70,7 +69,7 @@ class QBContinuousIndicator: UIView {
             path.move(to: currentPoint)
             currentPoint = CGPoint(x: width  / 2 + cos(angle * .pi / 180) * radius,
                                    y: height / 2 + sin(angle * .pi / 180) * radius)
-            path.addArc(withCenter: CGPoint(x: width / 2,
+            path.addArc(withCenter: CGPoint(x: width  / 2,
                                             y: height / 2),
                         radius: radius,
                         startAngle: priorAngle * .pi / 180,

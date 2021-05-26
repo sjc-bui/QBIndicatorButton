@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         }, for: .touchUpInside)
 
         button4.tag = 4
+        button4.indicatorRotateDuration = 0.6
         button4.roundCorners(corners: [.allCorners], radius: 12)
         button4.touch({ btn4 in
             self.btnClick(btn4)
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
 
         button5.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 20)
         button5.tag = 5
+        button5.indicatorRotateDuration = 2
         button5.touch({ btn5 in
             btn5.start {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
