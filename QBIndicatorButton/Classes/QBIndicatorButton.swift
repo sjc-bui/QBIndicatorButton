@@ -112,11 +112,32 @@ open class QBIndicatorButton: UIButton {
 
     @IBInspectable open var titleFadeDuration: Double = 0.3
 
-    open var indicatorRotateDuration: CfTime = 1.0
+    open var indicatorRotateDuration: CfTime {
+        get {
+            return self.indicator.rotateDuration
+        }
+        set {
+            self.indicator.rotateDuration = newValue
+        }
+    }
 
-    open var indicatorStrokeColor: UIColor = .white
+    open var indicatorStrokeColor: UIColor {
+        get {
+            return self.indicator.strokeColor
+        }
+        set {
+            self.indicator.strokeColor = newValue
+        }
+    }
 
-    open var indicatorStrokeWidth: CGFloat = 3.0
+    open var indicatorStrokeWidth: CGFloat {
+        get {
+            return self.indicator.strokeWidth
+        }
+        set {
+            self.indicator.strokeWidth = newValue
+        }
+    }
 
     var gradient: CAGradientLayer?
 
@@ -262,9 +283,6 @@ open class QBIndicatorButton: UIButton {
         self.addSubview(indicator)
         positionCircleIndicator()
 
-        indicator.rotateDuration = indicatorRotateDuration
-        indicator.strokeWidth = indicatorStrokeWidth
-        indicator.foregroundColor = indicatorStrokeColor
         indicator.alpha = 0
         indicator.isAnimating = true
 

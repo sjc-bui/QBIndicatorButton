@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 
         button1.roundCorners(corners: [.topLeft, .topRight], radius: 20)
         button1.tag = 1
+        button1.indicatorRotateDuration = 0.6
         button1.touch({ [weak self] btn1 in
             guard let self = self else { return }
             self.btnClick(btn1)
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         }, for: .touchUpInside)
 
         button4.tag = 4
-        button4.indicatorRotateDuration = 0.6
+        button4.indicatorRotateDuration = 2
         button4.roundCorners(corners: [.allCorners], radius: 12)
         button4.touch({ btn4 in
             self.btnClick(btn4)
@@ -48,10 +49,10 @@ class ViewController: UIViewController {
 
         button5.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 20)
         button5.tag = 5
-        button5.indicatorRotateDuration = 2
+        button5.indicatorRotateDuration = 1.5
         button5.touch({ btn5 in
             btn5.start {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
                     btn5.stop()
                 }
             }
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
         sender.start {
             print("button \(sender.tag) is starting...")
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
             sender.stop {
                 print("button \(sender.tag) is stopping...")
             }

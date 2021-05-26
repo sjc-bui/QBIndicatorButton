@@ -23,9 +23,9 @@ extension UIView {
 
 class QBContinuousIndicator: UIView {
 
-    public var strokeWidth: CGFloat     = 1.0
-    public var rotateDuration: CfTime   = 1.0
-    public var foregroundColor: UIColor = .white
+    public var strokeWidth: CGFloat   = 3.0
+    public var rotateDuration: CfTime = 1.0
+    public var strokeColor: UIColor   = .white
 
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
@@ -75,7 +75,7 @@ class QBContinuousIndicator: UIView {
                         endAngle: angle * .pi / 180,
                         clockwise: false)
             priorAngle = angle
-            foregroundColor.withAlphaComponent(angle / 360).setStroke()
+            strokeColor.withAlphaComponent(angle / 320).setStroke()
             path.stroke()
         }
     }
