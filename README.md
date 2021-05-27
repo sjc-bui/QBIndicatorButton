@@ -93,6 +93,9 @@ Supported appearance properties are:
 | `gradientDirection` | `Int` | Direction of color gradient `0~7` | `1` |
 | `activityIndicatorPosition` | `Int` | Position of activity indicator `0~2` | `1` |
 | `titleFadeDuration` | `Double` | Button title fade animated duration | `0.3` |
+| `indicatorRotateDuration` (v0.1.7) | `CFTimeInterval` | The activity indicator rotate duration | `1.0` |
+| `indicatorStrokeColor` (v0.1.7) | `UIColor` | Custom color of activity indicator | `.white` |
+| `indicatorStrokeWidth` (v0.1.7) | `CGFloat` | Stroke width of activity indicator | `3.0` |
 
 `QBIndicatorButton` also supported round every single corner of the button.
 ```swift
