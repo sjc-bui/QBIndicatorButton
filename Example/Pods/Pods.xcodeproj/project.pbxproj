@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0C057A3A121DFF1D34268AD444810EE7 /* Pods-QBIndicatorButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987836B2F3715CE869D02D06E317F04B /* Pods-QBIndicatorButton_Example-dummy.m */; };
-		2EB4848E265DCDE7000C5A1E /* QBContinuousIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */; };
-		4B1C69AF9C42A713830BD4BBE8EB6515 /* QBIndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */; };
-		6FCAF91383847E5D0404638476860851 /* QBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6CDD62E99A9372409C586175F0444 /* QBExtensions.swift */; };
+		33E1C4A5C8404150D6CB67200C86A8EB /* QBIndicatorButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4172C93254537AD93582D21407501646 /* QBIndicatorButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498F5A5FAD65744C12FBDC2223C137AB /* QBIndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CAB6D3D64161B8FF849173FB6E4A5 /* QBIndicatorButton.swift */; };
+		6DB64FF8482E58ADBC93F1EB7C6FD0C4 /* QBIndicatorButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F68A507DFAD8A199A76F53796CED25 /* QBIndicatorButton-dummy.m */; };
 		71CAAEB52BDB4EFCFA772E5A55540ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8710D1EF063C1C49D4B8FD7117950BB3 /* QBContinuousIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CC9650B39FFF1CFFA7A06B75F9FE4 /* QBContinuousIndicator.swift */; };
+		98F030787D21C4D0195A7190797DFD35 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FB59FCCB0C5AE1EA1D62F050BA5377 /* GradientDirection.swift */; };
 		A2D523DB9BA2B7318E497FECBB83EDB3 /* Pods-QBIndicatorButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B936C03610A63E7967E91F8004669 /* Pods-QBIndicatorButton_Tests-dummy.m */; };
-		A49229333121AA34658E2B7C36438C48 /* IndicatorPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F4F2253BD0AA036B67ADA87489BF7 /* IndicatorPosition.swift */; };
 		BDA60673180DFEC7E376BB1AB0905BD4 /* Pods-QBIndicatorButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6991B1F87420307A37A581239DA08BDE /* Pods-QBIndicatorButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1F68831CFA58F8A33BC89E2F15EB9D1 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D8A33A93AD4785EA9FB8E642B485A8 /* GradientDirection.swift */; };
 		C39EBCE0F9C88EF89C7E13BB567BC333 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C6B1130BD908004D466F877C4DE94776 /* QBIndicatorButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBA4827603865F160C3625AC4AC0195 /* QBIndicatorButton-dummy.m */; };
-		D6C0B735E393673A1EBD189FD7B2313B /* QBIndicatorButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3584B701DAF22E11D1C1362AFE40F19B /* QBIndicatorButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAFBFF3F413BD2413676040A63AC517C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E48B3DB2CA598C3D42E781AC790C43E0 /* QBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21244D0DAE8D48F1F51BB60F3A093DBA /* QBExtensions.swift */; };
+		F0D9C54DFA057F9F2AF280872F88B3F8 /* IndicatorPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0798348DAA261622533D05B24B888AD /* IndicatorPosition.swift */; };
 		FD57B9374805F05B8C14C4502C73C961 /* Pods-QBIndicatorButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89AB120A7FD9C150248C65F962E0FA32 /* Pods-QBIndicatorButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD5B580169686909F96A860065F39413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A801321DF05577B099FD9BCE9B205CA /* PBXContainerItemProxy */ = {
+		59F9A299B7614BB46406E4FEE8C629EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 025E11B17663301854E5ADD971093C18;
 			remoteInfo = "Pods-QBIndicatorButton_Example";
 		};
-		D82F5229967E5539563CF09E24322BE7 /* PBXContainerItemProxy */ = {
+		69E86634B527ACDCCC7C0061F61D971B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,59 +41,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		085D9F581A9E6509BE895AB3DC30F32E /* QBIndicatorButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.release.xcconfig; sourceTree = "<group>"; };
 		0CC3CCE9139E9AA7C74D808E90D246C4 /* Pods-QBIndicatorButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Tests-Info.plist"; sourceTree = "<group>"; };
-		158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBIndicatorButton.swift; path = QBIndicatorButton/Classes/QBIndicatorButton.swift; sourceTree = "<group>"; };
-		178C529A279ED51A879780B0AA789ECD /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = QBIndicatorButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0EB71F0D1FB998857F3D077EACE63001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		104CC9650B39FFF1CFFA7A06B75F9FE4 /* QBContinuousIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBContinuousIndicator.swift; path = QBIndicatorButton/Classes/QBContinuousIndicator.swift; sourceTree = "<group>"; };
+		21244D0DAE8D48F1F51BB60F3A093DBA /* QBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBExtensions.swift; path = QBIndicatorButton/Classes/QBExtensions.swift; sourceTree = "<group>"; };
 		2C9E3F73DCBCACA6BBDED7C496B06FEA /* Pods-QBIndicatorButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QBIndicatorButton_Tests.modulemap"; sourceTree = "<group>"; };
-		2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QBContinuousIndicator.swift; path = QBIndicatorButton/Classes/QBContinuousIndicator.swift; sourceTree = "<group>"; };
-		3584B701DAF22E11D1C1362AFE40F19B /* QBIndicatorButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-umbrella.h"; sourceTree = "<group>"; };
 		3F87E6476CB674C23737C33481DAF35D /* Pods-QBIndicatorButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Example-Info.plist"; sourceTree = "<group>"; };
+		4172C93254537AD93582D21407501646 /* QBIndicatorButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-umbrella.h"; sourceTree = "<group>"; };
 		495B936C03610A63E7967E91F8004669 /* Pods-QBIndicatorButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QBIndicatorButton_Tests-dummy.m"; sourceTree = "<group>"; };
 		497EB02D0708C2C3B53E58973932B8FB /* Pods-QBIndicatorButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AA6AE2C3CD6DA454E614FD1A77FF3CA /* Pods-QBIndicatorButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5E64DAE14838917B7748EBFEE190F3B0 /* Pods-QBIndicatorButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QBIndicatorButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		647A0E244EC99ECEFB23B1147087F95A /* QBIndicatorButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QBIndicatorButton.modulemap; sourceTree = "<group>"; };
+		6572F84016C54A4AC3F8EEF2C6B676FB /* QBIndicatorButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QBIndicatorButton.modulemap; sourceTree = "<group>"; };
 		690C9D3CFF5342F706C7948781E5643A /* Pods-QBIndicatorButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6991B1F87420307A37A581239DA08BDE /* Pods-QBIndicatorButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QBIndicatorButton_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6E26E191185A7C70759CD9B5C14F6172 /* Pods-QBIndicatorButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QBIndicatorButton_Example.modulemap"; sourceTree = "<group>"; };
-		6FA91D26ADEB0D95E0474C2074AE7C46 /* Pods_QBIndicatorButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBIndicatorButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0CAB6D3D64161B8FF849173FB6E4A5 /* QBIndicatorButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBIndicatorButton.swift; path = QBIndicatorButton/Classes/QBIndicatorButton.swift; sourceTree = "<group>"; };
+		6F4772BE51F2F70FB69C55C4B03AE590 /* QBIndicatorButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.debug.xcconfig; sourceTree = "<group>"; };
+		6FA91D26ADEB0D95E0474C2074AE7C46 /* Pods_QBIndicatorButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QBIndicatorButton_Example.framework; path = "Pods-QBIndicatorButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		79F17E16562490BD9F3325D2A5DAD6EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		799292CE21CCF54A94D6AAAE716C1E01 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		7C8E16FC34719D90D96967F03D92F0BF /* Pods-QBIndicatorButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7EBA4827603865F160C3625AC4AC0195 /* QBIndicatorButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QBIndicatorButton-dummy.m"; sourceTree = "<group>"; };
-		81D6CDD62E99A9372409C586175F0444 /* QBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QBExtensions.swift; path = QBIndicatorButton/Classes/QBExtensions.swift; sourceTree = "<group>"; };
-		85461145A011005EAAD8F9372737D1F7 /* QBIndicatorButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QBIndicatorButton-Info.plist"; sourceTree = "<group>"; };
 		890B16760157370A1415004E47A3A843 /* Pods-QBIndicatorButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QBIndicatorButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		89AB120A7FD9C150248C65F962E0FA32 /* Pods-QBIndicatorButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QBIndicatorButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		8ADA7044441751A8B97D16AC7120D119 /* QBIndicatorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QBIndicatorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91E345CC7A3CADC572A10B1EBFD48137 /* QBIndicatorButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-prefix.pch"; sourceTree = "<group>"; };
+		8ADA7044441751A8B97D16AC7120D119 /* QBIndicatorButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QBIndicatorButton.framework; path = QBIndicatorButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		987836B2F3715CE869D02D06E317F04B /* Pods-QBIndicatorButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QBIndicatorButton_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3D6C0F0AD7CC59E4C0561471A030C97 /* Pods_QBIndicatorButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBIndicatorButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C60F4F2253BD0AA036B67ADA87489BF7 /* IndicatorPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorPosition.swift; path = QBIndicatorButton/Classes/IndicatorPosition.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE78B4DB17CB5246492600B092B24D8C /* QBIndicatorButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.release.xcconfig; sourceTree = "<group>"; };
+		C3D6C0F0AD7CC59E4C0561471A030C97 /* Pods_QBIndicatorButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QBIndicatorButton_Tests.framework; path = "Pods-QBIndicatorButton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F68A507DFAD8A199A76F53796CED25 /* QBIndicatorButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QBIndicatorButton-dummy.m"; sourceTree = "<group>"; };
 		CA87887B0E9EB0455F3CACE5F09D54DF /* Pods-QBIndicatorButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QBIndicatorButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E1B7D3949AF692E0B1264051E249421C /* QBIndicatorButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBIndicatorButton.debug.xcconfig; sourceTree = "<group>"; };
+		D0798348DAA261622533D05B24B888AD /* IndicatorPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorPosition.swift; path = QBIndicatorButton/Classes/IndicatorPosition.swift; sourceTree = "<group>"; };
+		DF25281476FB33A28D67A19577840218 /* QBIndicatorButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBIndicatorButton-prefix.pch"; sourceTree = "<group>"; };
+		E11683C9C2EC56DE6404E5DCE05A64AE /* QBIndicatorButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QBIndicatorButton-Info.plist"; sourceTree = "<group>"; };
+		E31004A4B1E5C9F0172D003EC1B68999 /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QBIndicatorButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E492A91CC56918487617EF7785B307EB /* Pods-QBIndicatorButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QBIndicatorButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAB3BE4318D335C2E084491A3F471D29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EE454EA7BE1B805F94C5F20CEB500376 /* Pods-QBIndicatorButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QBIndicatorButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F7D8A33A93AD4785EA9FB8E642B485A8 /* GradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDirection.swift; path = QBIndicatorButton/Classes/GradientDirection.swift; sourceTree = "<group>"; };
+		F8FB59FCCB0C5AE1EA1D62F050BA5377 /* GradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDirection.swift; path = QBIndicatorButton/Classes/GradientDirection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5864316C26542A12E4FFE3BAD4274C2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBFF3F413BD2413676040A63AC517C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		701A96ADB0819FC32A8FE0AF5BD007A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71CAAEB52BDB4EFCFA772E5A55540ABF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87EC4328C0070C740872D63BBEBB6C36 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD5B580169686909F96A860065F39413 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0899B9774D34179A41BECE05E5F403FB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0EB71F0D1FB998857F3D077EACE63001 /* LICENSE */,
+				E31004A4B1E5C9F0172D003EC1B68999 /* QBIndicatorButton.podspec */,
+				799292CE21CCF54A94D6AAAE716C1E01 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		1836DC4586017741CC01D6DDCD156CD9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		5A700457FCAA45CC88DCC4141E50A411 /* QBIndicatorButton */ = {
+			isa = PBXGroup;
+			children = (
+				F8FB59FCCB0C5AE1EA1D62F050BA5377 /* GradientDirection.swift */,
+				D0798348DAA261622533D05B24B888AD /* IndicatorPosition.swift */,
+				104CC9650B39FFF1CFFA7A06B75F9FE4 /* QBContinuousIndicator.swift */,
+				21244D0DAE8D48F1F51BB60F3A093DBA /* QBExtensions.swift */,
+				6F0CAB6D3D64161B8FF849173FB6E4A5 /* QBIndicatorButton.swift */,
+				0899B9774D34179A41BECE05E5F403FB /* Pod */,
+				F1469C70B4B69891D3E803EAA037D42B /* Support Files */,
+			);
+			name = QBIndicatorButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		916CD03542A50D0DF98D4728C6DAD744 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A700457FCAA45CC88DCC4141E50A411 /* QBIndicatorButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		A2F3ED0C04EF6CA3184BABEF6AC46664 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,48 +201,15 @@
 			path = "Target Support Files/Pods-QBIndicatorButton_Example";
 			sourceTree = "<group>";
 		};
-		AE55C885C28A39F4AD241498191A17CD /* QBIndicatorButton */ = {
-			isa = PBXGroup;
-			children = (
-				F7D8A33A93AD4785EA9FB8E642B485A8 /* GradientDirection.swift */,
-				C60F4F2253BD0AA036B67ADA87489BF7 /* IndicatorPosition.swift */,
-				81D6CDD62E99A9372409C586175F0444 /* QBExtensions.swift */,
-				158AC54D63CDFF5B2E73F7DFF2DE3E0E /* QBIndicatorButton.swift */,
-				CFDDAF0BCE924AC99F18399F4694CAF5 /* Pod */,
-				FC25ABE563896F57F019F109A9E87E7F /* Support Files */,
-				2EB4848D265DCDE7000C5A1E /* QBContinuousIndicator.swift */,
-			);
-			name = QBIndicatorButton;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BBA0EB418B3E5E435718F804F4175422 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AE55C885C28A39F4AD241498191A17CD /* QBIndicatorButton */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BBA0EB418B3E5E435718F804F4175422 /* Development Pods */,
+				916CD03542A50D0DF98D4728C6DAD744 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				A2F3ED0C04EF6CA3184BABEF6AC46664 /* Products */,
 				1836DC4586017741CC01D6DDCD156CD9 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CFDDAF0BCE924AC99F18399F4694CAF5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				EAB3BE4318D335C2E084491A3F471D29 /* LICENSE */,
-				178C529A279ED51A879780B0AA789ECD /* QBIndicatorButton.podspec */,
-				79F17E16562490BD9F3325D2A5DAD6EE /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -220,16 +220,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FC25ABE563896F57F019F109A9E87E7F /* Support Files */ = {
+		F1469C70B4B69891D3E803EAA037D42B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				647A0E244EC99ECEFB23B1147087F95A /* QBIndicatorButton.modulemap */,
-				7EBA4827603865F160C3625AC4AC0195 /* QBIndicatorButton-dummy.m */,
-				85461145A011005EAAD8F9372737D1F7 /* QBIndicatorButton-Info.plist */,
-				91E345CC7A3CADC572A10B1EBFD48137 /* QBIndicatorButton-prefix.pch */,
-				3584B701DAF22E11D1C1362AFE40F19B /* QBIndicatorButton-umbrella.h */,
-				E1B7D3949AF692E0B1264051E249421C /* QBIndicatorButton.debug.xcconfig */,
-				085D9F581A9E6509BE895AB3DC30F32E /* QBIndicatorButton.release.xcconfig */,
+				6572F84016C54A4AC3F8EEF2C6B676FB /* QBIndicatorButton.modulemap */,
+				C4F68A507DFAD8A199A76F53796CED25 /* QBIndicatorButton-dummy.m */,
+				E11683C9C2EC56DE6404E5DCE05A64AE /* QBIndicatorButton-Info.plist */,
+				DF25281476FB33A28D67A19577840218 /* QBIndicatorButton-prefix.pch */,
+				4172C93254537AD93582D21407501646 /* QBIndicatorButton-umbrella.h */,
+				6F4772BE51F2F70FB69C55C4B03AE590 /* QBIndicatorButton.debug.xcconfig */,
+				BE78B4DB17CB5246492600B092B24D8C /* QBIndicatorButton.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/QBIndicatorButton";
@@ -246,11 +246,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		429AA08AE37405359C5B1753D885F1A6 /* Headers */ = {
+		37E8086E681E37E5B821A7922658F0D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C0B735E393673A1EBD189FD7B2313B /* QBIndicatorButton-umbrella.h in Headers */,
+				33E1C4A5C8404150D6CB67200C86A8EB /* QBIndicatorButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +277,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7007EDE80D03281C1F4B7C52F2E7CC84 /* PBXTargetDependency */,
+				8A32E029DA888B4F4527B716CBDD5C90 /* PBXTargetDependency */,
 			);
 			name = "Pods-QBIndicatorButton_Example";
 			productName = "Pods-QBIndicatorButton_Example";
@@ -286,12 +286,12 @@
 		};
 		B5999156CA138C53E2858F8B7283252B /* QBIndicatorButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58F14D0CE5B8841E4E78707FFC8B7A58 /* Build configuration list for PBXNativeTarget "QBIndicatorButton" */;
+			buildConfigurationList = A57F1E581CD79D795AA4771421F1F9C5 /* Build configuration list for PBXNativeTarget "QBIndicatorButton" */;
 			buildPhases = (
-				429AA08AE37405359C5B1753D885F1A6 /* Headers */,
-				1BE6540945CC7DDAC5AD6B220232AF7D /* Sources */,
-				87EC4328C0070C740872D63BBEBB6C36 /* Frameworks */,
-				944656BC23C79A037036D5181B560AF2 /* Resources */,
+				37E8086E681E37E5B821A7922658F0D5 /* Headers */,
+				158F2013ED44BC7C503499BB73C8CBF8 /* Sources */,
+				5864316C26542A12E4FFE3BAD4274C2F /* Frameworks */,
+				9DBBBBD4CFFB421598D532AB5F8F4BB9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -314,7 +314,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E9FB4B5AEC3C85B94EC4E2C97C81EC4F /* PBXTargetDependency */,
+				478481E26022EDE8606188E7777FD16D /* PBXTargetDependency */,
 			);
 			name = "Pods-QBIndicatorButton_Tests";
 			productName = "Pods-QBIndicatorButton_Tests";
@@ -351,7 +351,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		944656BC23C79A037036D5181B560AF2 /* Resources */ = {
+		9DBBBBD4CFFB421598D532AB5F8F4BB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,16 +375,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1BE6540945CC7DDAC5AD6B220232AF7D /* Sources */ = {
+		158F2013ED44BC7C503499BB73C8CBF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F68831CFA58F8A33BC89E2F15EB9D1 /* GradientDirection.swift in Sources */,
-				A49229333121AA34658E2B7C36438C48 /* IndicatorPosition.swift in Sources */,
-				6FCAF91383847E5D0404638476860851 /* QBExtensions.swift in Sources */,
-				C6B1130BD908004D466F877C4DE94776 /* QBIndicatorButton-dummy.m in Sources */,
-				4B1C69AF9C42A713830BD4BBE8EB6515 /* QBIndicatorButton.swift in Sources */,
-				2EB4848E265DCDE7000C5A1E /* QBContinuousIndicator.swift in Sources */,
+				98F030787D21C4D0195A7190797DFD35 /* GradientDirection.swift in Sources */,
+				F0D9C54DFA057F9F2AF280872F88B3F8 /* IndicatorPosition.swift in Sources */,
+				8710D1EF063C1C49D4B8FD7117950BB3 /* QBContinuousIndicator.swift in Sources */,
+				E48B3DB2CA598C3D42E781AC790C43E0 /* QBExtensions.swift in Sources */,
+				6DB64FF8482E58ADBC93F1EB7C6FD0C4 /* QBIndicatorButton-dummy.m in Sources */,
+				498F5A5FAD65744C12FBDC2223C137AB /* QBIndicatorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +407,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7007EDE80D03281C1F4B7C52F2E7CC84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QBIndicatorButton;
-			target = B5999156CA138C53E2858F8B7283252B /* QBIndicatorButton */;
-			targetProxy = D82F5229967E5539563CF09E24322BE7 /* PBXContainerItemProxy */;
-		};
-		E9FB4B5AEC3C85B94EC4E2C97C81EC4F /* PBXTargetDependency */ = {
+		478481E26022EDE8606188E7777FD16D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-QBIndicatorButton_Example";
 			target = 025E11B17663301854E5ADD971093C18 /* Pods-QBIndicatorButton_Example */;
-			targetProxy = 8A801321DF05577B099FD9BCE9B205CA /* PBXContainerItemProxy */;
+			targetProxy = 59F9A299B7614BB46406E4FEE8C629EA /* PBXContainerItemProxy */;
+		};
+		8A32E029DA888B4F4527B716CBDD5C90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QBIndicatorButton;
+			target = B5999156CA138C53E2858F8B7283252B /* QBIndicatorButton */;
+			targetProxy = 69E86634B527ACDCCC7C0061F61D971B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,9 +491,9 @@
 			};
 			name = Debug;
 		};
-		7FC117D75D9807F7E988F0378A95A943 /* Release */ = {
+		8ECB098CEA56810CC9D017642CC0DFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 085D9F581A9E6509BE895AB3DC30F32E /* QBIndicatorButton.release.xcconfig */;
+			baseConfigurationReference = 6F4772BE51F2F70FB69C55C4B03AE590 /* QBIndicatorButton.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -518,11 +518,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -579,43 +578,12 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		9C82C1FF7A84B8B30F04FB5964442302 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B7D3949AF692E0B1264051E249421C /* QBIndicatorButton.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QBIndicatorButton/QBIndicatorButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QBIndicatorButton/QBIndicatorButton-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QBIndicatorButton/QBIndicatorButton.modulemap";
-				PRODUCT_MODULE_NAME = QBIndicatorButton;
-				PRODUCT_NAME = QBIndicatorButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -752,6 +720,39 @@
 			};
 			name = Release;
 		};
+		F5390C8B077236DABC190BB065AAB70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE78B4DB17CB5246492600B092B24D8C /* QBIndicatorButton.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QBIndicatorButton/QBIndicatorButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QBIndicatorButton/QBIndicatorButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QBIndicatorButton/QBIndicatorButton.modulemap";
+				PRODUCT_MODULE_NAME = QBIndicatorButton;
+				PRODUCT_NAME = QBIndicatorButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,11 +774,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58F14D0CE5B8841E4E78707FFC8B7A58 /* Build configuration list for PBXNativeTarget "QBIndicatorButton" */ = {
+		A57F1E581CD79D795AA4771421F1F9C5 /* Build configuration list for PBXNativeTarget "QBIndicatorButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C82C1FF7A84B8B30F04FB5964442302 /* Debug */,
-				7FC117D75D9807F7E988F0378A95A943 /* Release */,
+				8ECB098CEA56810CC9D017642CC0DFAA /* Debug */,
+				F5390C8B077236DABC190BB065AAB70E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

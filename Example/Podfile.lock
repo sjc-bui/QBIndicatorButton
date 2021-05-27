@@ -1,5 +1,5 @@
 PODS:
-  - QBIndicatorButton (0.1.5)
+  - QBIndicatorButton (0.1.7)
 
 DEPENDENCIES:
   - QBIndicatorButton (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  QBIndicatorButton: c601c213af219844ec002327fc7f2943244226b2
+  QBIndicatorButton: a75035339ece444c7e5c2b24ef465d5fbddabd77
 
 PODFILE CHECKSUM: f016274f9b262c04a9c33dcc9a382a3394773b1d
 
