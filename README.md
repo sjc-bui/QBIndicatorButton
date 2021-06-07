@@ -30,11 +30,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ### Storyboard Setup
 Drag and drop `UIButton` into your Storyboard and set its class and module to `QBIndicatorButton`.
 
-![Custom class](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png?raw=true)
+<img alt="custom class" src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-class.png" width="450"/>
 
 Customize your button by setting properties from the Interface Builder.
 
-![Custom properties](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png?raw=true)
+<img alt="custom properties" src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton-properties.png" width="450"/>
 
 ### Code Setup
 ```swift
