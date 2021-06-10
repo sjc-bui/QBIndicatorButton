@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E15740726563AFD00EB4D3B /* QBIndicatorButton-properties.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */; };
 		2EA22B762655094200C6AE7D /* QBIndicatorButton-class.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */; };
-		2EB4849A265E3A06000C5A1E /* QBIndicatorButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EB48499265E3A06000C5A1E /* QBIndicatorButton.gif */; };
+		2EF8F6982671F84200E35710 /* QBIndicatorButton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF8F6972671F84200E35710 /* QBIndicatorButton.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 		085BE4BFF600122766077509 /* QBIndicatorButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QBIndicatorButton.podspec; path = ../QBIndicatorButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QBIndicatorButton-properties.png"; sourceTree = "<group>"; };
 		2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QBIndicatorButton-class.png"; sourceTree = "<group>"; };
-		2EB48499265E3A06000C5A1E /* QBIndicatorButton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QBIndicatorButton.gif; sourceTree = "<group>"; };
+		2EF8F6972671F84200E35710 /* QBIndicatorButton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QBIndicatorButton.gif; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* QBIndicatorButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBIndicatorButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		2EA22B722654EADE00C6AE7D /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				2EB48499265E3A06000C5A1E /* QBIndicatorButton.gif */,
+				2EF8F6972671F84200E35710 /* QBIndicatorButton.gif */,
 				2E15740626563AFC00EB4D3B /* QBIndicatorButton-properties.png */,
 				2EA22B752655094200C6AE7D /* QBIndicatorButton-class.png */,
 			);
@@ -267,7 +267,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				2E15740726563AFD00EB4D3B /* QBIndicatorButton-properties.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				2EB4849A265E3A06000C5A1E /* QBIndicatorButton.gif in Resources */,
+				2EF8F6982671F84200E35710 /* QBIndicatorButton.gif in Resources */,
 				2EA22B762655094200C6AE7D /* QBIndicatorButton-class.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
