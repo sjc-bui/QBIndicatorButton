@@ -7,7 +7,7 @@
 
 Custom of UIButton in Swift.
 
-![Screen shot](https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton.gif?raw=true)
+<img alt="Screenshot" src="https://github.com/sjc-bui/QBIndicatorButton/blob/master/Example/Screenshots/QBIndicatorButton.gif" width="300"/>
 
 ## Example
 
